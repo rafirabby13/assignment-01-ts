@@ -51,4 +51,4 @@ age: number; // not allowed
 
 3. Defining tuples
 
-type NameAndAge = [string, number];
+type NameAndAge = [string, number];ggg
