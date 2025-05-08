@@ -1,4 +1,4 @@
-{
+
   function formatString(input: string, toUpper?: boolean): string {
     if (typeof toUpper === "undefined") {
       return input.toUpperCase();
@@ -6,7 +6,7 @@
     if (toUpper) {
       return input.toUpperCase();
     }
-    return input.toLocaleLowerCase();
+    return input.toLowerCase();
   }
 
 
@@ -19,7 +19,7 @@
   
 function concatenateArrays<T>(...arrays: T[][]): T[]{
   let concateArray: T[] = []
-   arrays.map(array=>{
+   arrays.forEach(array=>{
      
        concateArray.push(...array)
 
@@ -78,7 +78,7 @@ interface Product {
         return null
     }
   
-    const highestPrice : Product   = products.reduce((prev, current)=> (prev && prev.price > current.price )? prev : current)
+    const highestPrice : Product   = products.reduce((prev, current)=> (prev.price > current.price )? prev : current)
    
 
     return highestPrice
@@ -121,4 +121,4 @@ interface Product {
       }
     });
   }
-}
+
