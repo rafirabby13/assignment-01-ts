@@ -21,7 +21,7 @@ interface Student extends interface{
 id: number;
 }
 
-3. Declaration merge:
+3. Declaration merge:a
 
 interface User{
 hasCar: boolean;
