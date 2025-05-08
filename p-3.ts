@@ -12,6 +12,6 @@
     
     }
 
-    const res = concatenateArrays([1, 2], [3, 4], [5]);  
+    const res = concatenateArrays(["a", "b"], ["c"], ['2', '45']);  
     console.log(res)
 }

@@ -21,12 +21,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                 else {
                     setTimeout(() => {
                         res(n * n);
-                    }, 2000);
+                    }, 1000);
                 }
             });
         });
     }
-    squareAsync(54)
+    squareAsync(-5)
         .then((res) => {
         console.log(res);
     }) // Output after 1s: 16

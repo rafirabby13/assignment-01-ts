@@ -1,7 +1,7 @@
 {
 
     function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
-        const ratingABoveFour = items.filter(item=> item.rating >= 4)
+        const ratingABoveFour = items.filter(item=> item.rating >= 5)
 
         return ratingABoveFour
     }

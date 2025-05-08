@@ -12,8 +12,7 @@
     })(Day || (Day = {}));
     function getDayType(day) {
         return [Day.Saturday, Day.Sunday].includes(day) ? "Weekend" : "Weekday";
-        // return (day === Day.Saturday || day === Day.Sunday) ? "Weekend" : "Weekday"
     }
-    const res = getDayType(Day.Sunday);
+    const res = getDayType(Day.Thursday);
     console.log(res);
 }

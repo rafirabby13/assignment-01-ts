@@ -26,7 +26,7 @@
     }
   }
 
-  const myCar = new Car("Toyota", 2020, "Corolla");
+  const myCar = new Car("Toyotrrra", 2020, "Corolla");
 
   myCar.getInfo(); 
   myCar.getModel();

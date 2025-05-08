@@ -1,7 +1,7 @@
 "use strict";
 {
     function filterByRating(items) {
-        const ratingABoveFour = items.filter(item => item.rating >= 4);
+        const ratingABoveFour = items.filter(item => item.rating >= 5);
         return ratingABoveFour;
     }
     const books = [
