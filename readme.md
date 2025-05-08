@@ -126,3 +126,48 @@
 <p align="left">type Employee = Identity & Contact;<br>type Customer = BusinessPartner & Contact;</p>
 
 ###
+
+
+<h1 align="left">How does TypeScript help in improving code quality and project maintainability?</h1>
+
+###
+
+<h3 align="left">Static type checking</h3>
+
+###
+
+<p align="left">Typescript checks the type in compile time. So it prevent errors in run time</p>
+
+###
+
+<h3 align="left">Easy to understand</h3>
+
+###
+
+<p align="left">Typescript type declaration makes developer to understand code easily.</p>
+
+###
+
+<h3 align="left">Better for teamwork</h3>
+
+###
+
+<p align="left">Large teams can work on different parts of a project with confidence, knowing TypeScript will catch incorrect usage.</p>
+
+###
+
+<h3 align="left">Reduce runtime error</h3>
+
+###
+
+<p align="left">As error checks in compile time in typescript, it reduce runtime errors.</p>
+
+###
+
+<h3 align="left">Supports Large-Scale Applications</h3>
+
+###
+
+<p align="left">Type safety across files and modules ensures long-term maintainability.</p>
+
+###
