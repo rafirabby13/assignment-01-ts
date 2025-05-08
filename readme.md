@@ -57,3 +57,72 @@
 <p align="left">type NameAndAge = [string, number];</p>
 
 ###
+
+
+<h1 align="left">Provide an example of using union and intersection types in TypeScript.</h1>
+
+###
+
+<h2 align="left">Union</h2>
+
+###
+
+<p align="left">If a type can be of multiple types then we use union "|". For example, a student id can be string or number, so it can ve written as,</p>
+
+###
+
+<p align="left">type Id = string | number;</p>
+
+###
+
+<h3 align="left">More examples:</h3>
+
+###
+
+<p align="left">function getSmallPet(): Fish | Bird; <br><br>Here the function return Fish or Bird, This is union type.</p>
+
+###
+
+<p align="left">function printStatusCode(code: string | number) {<br>  console.log(`My status code is ${code}.`)<br>}</p>
+
+###
+
+<p align="left">let myBoolean: string | boolean;<br><br>myBoolean = 'TRUE';  // string type<br>myBoolean = false;   // boolean type</p>
+
+###
+
+<p align="left">// This is a union of string literal types<br>type RPS = 'rock' | 'paper' | 'scissors' ;</p>
+
+###
+
+<p align="left">function roughAge(age: number | string): number | string {<br> return ...///<br>}</p>
+
+###
+
+<h2 align="left">Intersection</h2>
+
+###
+
+<h3 align="left">type intersection use as "&". This is used for intersection two or more type.</h3>
+
+###
+
+<p align="left">interface Student { <br>  student_id: number; <br>  name: string; <br>} <br>  <br>interface Teacher { <br>  Teacher_Id: number; <br>  teacher_name: string; <br>} <br>  <br>type intersected_type = Student & Teacher; <br> // the type intersected_type referse both Student and teacher .</p>
+
+###
+
+<h3 align="left">Suppose that you have three interfaces: BusinessPartner, Identity, and Contact.</h3>
+
+###
+
+<p align="left">interface BusinessPartner {<br>    name: string;<br>    credit: number;<br>}<br><br>interface Identity {<br>    id: number;<br>    name: string;<br>}<br><br>interface Contact {<br>    email: string;<br>    phone: string;<br>}</p>
+
+###
+
+<h3 align="left">The following defines two intersection types:</h3>
+
+###
+
+<p align="left">type Employee = Identity & Contact;<br>type Customer = BusinessPartner & Contact;</p>
+
+###
