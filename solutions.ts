@@ -12,23 +12,23 @@
 
 
   function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
-    const ratingABoveFour = items.filter(item=> item.rating >= 4)
+    const ratingABoveFour: { title: string; rating: number }[] = items.filter(item=> item.rating >= 4)
 
     return ratingABoveFour
 }
   
 function concatenateArrays<T>(...arrays: T[][]): T[]{
-    let concateArray: T[] = []
-     arrays.map(array=>{
-         // console.log(array)
-         concateArray.push(...array)
+  let concateArray: T[] = []
+   arrays.map(array=>{
+     
+       concateArray.push(...array)
 
-     })
-     // console.log(concateArray)
-     return concateArray
+   })
 
- 
- }
+   return concateArray
+
+
+}
 
  class Vehicle {
     constructor(private make: string, public year: number) {
@@ -49,9 +49,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[]{
       this.model = model;
     }
 
-    // getModel(model: string){
-    //     this.model= model
-    // }
     getModel() {
       console.log(`Model: ${this.model}`);
     }
@@ -112,9 +109,7 @@ interface Product {
 
 
   async function squareAsync(n: number): Promise<number> {
-    // if (n < 0) {
-    //     console.log('Negative number not allowed')
-    // }
+   
     return await new Promise<number>((res, rej) => {
       if (n < 0) {
         rej("Negative number not allowed");
